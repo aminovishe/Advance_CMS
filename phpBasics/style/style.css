@@ -1,60 +1,134 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'ZCOOL XiaoWei', serif;
 }
-html,body{
+
+a:hover {
+    text-decoration: none;
+}
+
+html, body {
     margin: 0;
     padding: 0;
 }
-.logo{
+
+.logo {
     width: 100px;
 }
-.navbar-custom{
+
+.navbar-custom {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
 }
-.navbar-custom > a{
+
+.navbar-custom > a {
     color: darkslategrey;
     font-size: 2em;
 }
-.navbar-custom .nav-item{
+
+.navbar-custom .nav-item {
     width: 10em;
     text-align: center;
 }
-.navbar-custom .nav-item a{
+
+.navbar-custom .nav-item a {
     color: black;
     font-size: 1.2em;
 }
-.navbar-custom .nav-item:nth-of-type(odd) a{
+
+.navbar-custom .nav-item:nth-of-type(odd) a {
     border-radius: 20px 0;
 }
-.navbar-custom .nav-item:nth-of-type(even) a{
+
+.navbar-custom .nav-item:nth-of-type(even) a {
     border-radius: 0 20px;
 }
-.navbar-custom .nav-item a:hover,.navbar-custom .nav-item:hover a{
+
+.navbar-custom .nav-item a:hover, .navbar-custom .nav-item:hover a {
     color: white;
     background-color: black;
 }
-header{
+
+header {
     background: url("../images/header-bg.png") fixed;
     background-size: cover;
     width: 100%;
     height: 300px;
     padding-top: 100px;
 }
-.post{
+
+.post {
     border-bottom: 2px solid black;
     padding: 10px 0;
 }
-.meta a, .meta a:visited{
+
+.post-title, .post-title:visited {
     color: #721c24;
 }
-.meta a:hover{
+
+.post-title:hover {
+    color: #a71d2a;
+    text-decoration: none;
+    text-shadow: 0 2px 2px silver;
+}
+
+.meta a, .meta a:visited {
+    color: #721c24;
+}
+
+.meta a:hover {
     color: #ff8b00;
 }
-.navbar-sub{
+
+.navbar-sub {
     border-radius: 0 0 50px 50px;
     background-color: #d3d9d5;
 }
+
+.navbar-sub-hide {
+    visibility: hidden;
+}
+
+.fa-angle-double-down {
+    margin-top: 50px;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.page-header {
+    margin-bottom: 2em;
+}
+
+.custom-sidebar-list {
+    border-left: 2px solid #D3D9D5;
+    border-bottom: 2px solid #D3D9D5;
+    border-radius: 0 0 0 20px;
+    padding: 0 0 11px 0;
+}
+
+.custom-sidebar-list .list-group-item {
+    border: none;
+    color: black;
+}
+
+.custom-sidebar-list .list-group-item:hover {
+    background-color: #D3D9D5;
+}
+
+.postOfDay {
+    border: 1px dashed darkslateblue;
+    padding: 5px;
+}
+
+.social-network a {
+    color: #1b1e21;
+}
+
+footer {
+    height: 60px;
+    background-color: #1b1e21;
+    color: white;
+}
+
